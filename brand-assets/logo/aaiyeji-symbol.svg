@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Aaiyeji symbol — a welcome arch with a lotus bud">
+  <!-- Aaiyeji symbol: an open doorway/arch (aaiye = welcome) cradling a lotus bud.
+       Initial concept — editable master. Colours reference brand-tokens.css. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- outer arch -->
+    <path d="M12 57 V30 C12 17 21 8.5 32 6 C43 8.5 52 17 52 30 V57" stroke="#70233F" stroke-width="2.6"/>
+    <!-- inner arch -->
+    <path d="M19 57 V31 C19 21 25.5 14.5 32 12.5 C38.5 14.5 45 21 45 31 V57" stroke="#C99B50" stroke-width="1.6"/>
+    <!-- threshold -->
+    <path d="M8 57 H56" stroke="#70233F" stroke-width="2.6"/>
+    <!-- lotus bud: three petals -->
+    <path d="M32 47 C29.4 43.6 29.4 39.4 32 35.5 C34.6 39.4 34.6 43.6 32 47 Z" stroke="#C99B50" stroke-width="1.6"/>
+    <path d="M32 47 C27.8 46.4 24.9 43.6 24.2 39.6 C28.4 40.2 31.2 43 32 47 Z" stroke="#C99B50" stroke-width="1.4"/>
+    <path d="M32 47 C36.2 46.4 39.1 43.6 39.8 39.6 C35.6 40.2 32.8 43 32 47 Z" stroke="#C99B50" stroke-width="1.4"/>
+    <!-- finial dot -->
+    <circle cx="32" cy="22.5" r="1.7" fill="#C99B50" stroke="none"/>
+  </g>
+</svg>

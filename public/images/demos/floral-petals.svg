@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Scattered blush petals with sage stems">
+  <!-- Original Aaiyeji artwork — floral demo gallery. -->
+  <rect width="400" height="500" fill="#F6ECE6"/>
+  <rect x="16" y="16" width="368" height="468" fill="none" stroke="#E7DCC9" stroke-width="1.5"/>
+  <g fill="none" stroke="#7D927F" stroke-width="1.4" stroke-linecap="round">
+    <path d="M80 420 C120 340 150 260 160 160"/>
+    <path d="M160 160 C162 140 170 124 184 112"/>
+    <path d="M120 320 C104 314 96 302 96 288 C110 292 118 304 120 320 Z"/>
+    <path d="M140 250 C156 244 164 232 164 218 C150 222 142 234 140 250 Z"/>
+    <path d="M320 430 C290 360 272 300 268 220"/>
+    <path d="M268 220 C266 200 258 184 246 174"/>
+    <path d="M288 340 C304 334 312 322 312 308 C298 312 290 324 288 340 Z"/>
+  </g>
+  <!-- petals -->
+  <g fill="#F0DFDA" stroke="#70233F" stroke-width="1.1">
+    <path d="M184 112 C176 96 178 80 190 68 C202 80 204 96 196 112 C192 118 188 118 184 112 Z"/>
+    <path d="M246 174 C238 160 240 146 250 136 C260 146 262 160 254 174 C251 179 249 179 246 174 Z"/>
+    <path d="M210 300 C202 288 204 276 214 268 C224 276 226 288 218 300 C215 304 213 304 210 300 Z"/>
+    <path d="M120 380 C112 368 114 356 124 348 C134 356 136 368 128 380 C125 384 123 384 120 380 Z"/>
+    <path d="M300 260 C292 248 294 236 304 228 C314 236 316 248 308 260 C305 264 303 264 300 260 Z"/>
+    <path d="M240 420 C232 408 234 396 244 388 C254 396 256 408 248 420 C245 424 243 424 240 420 Z"/>
+  </g>
+  <!-- loose fallen petals -->
+  <g fill="#F0DFDA" stroke="none" opacity="0.9">
+    <ellipse cx="90" cy="452" rx="10" ry="4.5" transform="rotate(-14 90 452)"/>
+    <ellipse cx="180" cy="462" rx="10" ry="4.5" transform="rotate(10 180 462)"/>
+    <ellipse cx="280" cy="456" rx="9" ry="4" transform="rotate(-8 280 456)"/>
+    <ellipse cx="330" cy="470" rx="9" ry="4" transform="rotate(16 330 470)"/>
+    <ellipse cx="60" cy="200" rx="8" ry="3.6" transform="rotate(-20 60 200)"/>
+    <ellipse cx="340" cy="150" rx="8" ry="3.6" transform="rotate(18 340 150)"/>
+  </g>
+  <g fill="#C99B50">
+    <circle cx="190" cy="94" r="2.4"/><circle cx="250" cy="156" r="2.2"/><circle cx="214" cy="286" r="2.2"/><circle cx="124" cy="366" r="2.2"/><circle cx="304" cy="246" r="2.2"/><circle cx="244" cy="406" r="2.2"/>
+  </g>
+</svg>

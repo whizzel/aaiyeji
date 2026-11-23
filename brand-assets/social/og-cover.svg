@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Aaiyeji — a beautiful way to say you're invited">
+  <!-- Aaiyeji Open Graph cover — master concept.
+       The live site generates a PNG equivalent via app/opengraph-image.tsx (next/og),
+       because social crawlers (including WhatsApp) prefer raster images. -->
+  <rect width="1200" height="630" fill="#351824"/>
+  <rect x="24" y="24" width="1152" height="582" fill="none" stroke="#C99B50" stroke-width="1.5"/>
+  <rect x="34" y="34" width="1132" height="562" fill="none" stroke="#C99B50" stroke-width="0.6" opacity="0.6"/>
+  <!-- arch motif, right side -->
+  <g fill="none" stroke="#C99B50" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" transform="translate(830 130) scale(0.72)">
+    <path d="M40 500 V250 C40 190 70 150 120 120 C165 93 185 70 200 34 C215 70 235 93 280 120 C330 150 360 190 360 250 V500" stroke-width="2.4"/>
+    <path d="M62 500 V255 C62 205 88 170 132 143 C172 119 190 98 200 70 C210 98 228 119 268 143 C312 170 338 205 338 255 V500" stroke-width="1.4"/>
+    <path d="M200 34 V14" stroke-width="2"/>
+    <circle cx="200" cy="10" r="4" stroke-width="1.6"/>
+    <path d="M20 500 H380" stroke-width="2.4"/>
+    <path d="M200 430 C192 419 192 405 200 392 C208 405 208 419 200 430 Z" stroke-width="2"/>
+    <path d="M200 430 C186 428 176 419 174 405 C188 407 197 416 200 430 Z" stroke-width="1.6"/>
+    <path d="M200 430 C214 428 224 419 226 405 C212 407 203 416 200 430 Z" stroke-width="1.6"/>
+  </g>
+  <!-- wordmark -->
+  <text x="96" y="268" font-family="'Cormorant Garamond', Georgia, serif" font-size="96" font-weight="600" letter-spacing="14" fill="#FBF7F0">AAIYEJI</text>
+  <line x1="100" y1="300" x2="620" y2="300" stroke="#C99B50" stroke-width="1.5"/>
+  <text x="98" y="356" font-family="Georgia, serif" font-style="italic" font-size="38" fill="#E4C98F">A beautiful way to say, you&#8217;re invited.</text>
+  <text x="98" y="416" font-family="Verdana, sans-serif" font-size="21" letter-spacing="2" fill="#FBF7F0" opacity="0.85">PERSONALISED DIGITAL INVITATION WEBSITES</text>
+  <text x="98" y="452" font-family="Verdana, sans-serif" font-size="21" letter-spacing="2" fill="#FBF7F0" opacity="0.65">WEDDINGS &amp; LIFE&#8217;S SPECIAL CELEBRATIONS</text>
+  <text x="98" y="560" font-family="Verdana, sans-serif" font-size="18" letter-spacing="3" fill="#C99B50">DIGITAL INVITATION STUDIO</text>
+</svg>

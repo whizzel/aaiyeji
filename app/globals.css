@@ -1,0 +1,165 @@
+@import "tailwindcss";
+@import "../brand-assets/brand-tokens.css";
+
+/* Map brand tokens into the Tailwind theme.
+   Brand colours live ONLY in brand-assets/brand-tokens.css. */
+@theme inline {
+  --color-wine: var(--aaiyeji-wine);
+  --color-deep: var(--aaiyeji-deep);
+  --color-gold: var(--aaiyeji-gold);
+  --color-ivory: var(--aaiyeji-ivory);
+  --color-blush: var(--aaiyeji-blush);
+  --color-sage: var(--aaiyeji-sage);
+  --color-ink: var(--aaiyeji-ink);
+  --color-paper: var(--aaiyeji-white);
+  --color-wine-soft: var(--aaiyeji-wine-soft);
+  --color-gold-soft: var(--aaiyeji-gold-soft);
+  --color-ivory-dim: var(--aaiyeji-ivory-dim);
+  --color-line: var(--aaiyeji-line);
+  --color-night: var(--aaiyeji-night);
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: var(--font-dmsans), "DM Sans", system-ui, "Segoe UI", sans-serif;
+  --font-devanagari: var(--font-notodev), "Noto Serif Devanagari", "Noto Sans Devanagari", Mangal, serif;
+}
+
+/* ---------- Base ---------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--aaiyeji-ivory);
+  color: var(--aaiyeji-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--aaiyeji-wine);
+  color: var(--aaiyeji-ivory);
+}
+
+:focus-visible {
+  outline: 2px solid var(--aaiyeji-wine);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.theme-royal :focus-visible,
+.on-dark :focus-visible {
+  outline-color: var(--aaiyeji-gold-soft);
+}
+
+section[id],
+div[id="enquire"] {
+  scroll-margin-top: 5.5rem;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.6rem 1.2rem;
+  background: var(--aaiyeji-deep);
+  color: var(--aaiyeji-ivory);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: top 0.2s ease;
+}
+.skip-link:focus-visible {
+  top: 1rem;
+}
+
+/* Subtle paper grain for warm sections */
+.bg-grain {
+  background-image: radial-gradient(rgba(53, 24, 36, 0.03) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* ---------- Reveal on scroll (progressive enhancement) ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- FAQ accordion ---------- */
+
+.faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+.faq-panel.open {
+  grid-template-rows: 1fr;
+}
+.faq-panel > div {
+  overflow: hidden;
+}
+
+/* ---------- Invitation demo themes ---------- */
+
+.theme-royal {
+  --inv-bg: #241019;
+  --inv-bg-soft: #2e1521;
+  --inv-surface: #351824;
+  --inv-text: #fbf7f0;
+  --inv-muted: rgba(251, 247, 240, 0.74);
+  --inv-accent: #e4c98f;
+  --inv-accent-strong: #c99b50;
+  --inv-line: rgba(201, 155, 80, 0.42);
+  --inv-chip: rgba(201, 155, 80, 0.14);
+}
+
+.theme-floral {
+  --inv-bg: #fbf7f0;
+  --inv-bg-soft: #f6ece6;
+  --inv-surface: #ffffff;
+  --inv-text: #351824;
+  --inv-muted: rgba(45, 37, 41, 0.74);
+  --inv-accent: #70233f;
+  --inv-accent-strong: #70233f;
+  --inv-line: #e7dcc9;
+  --inv-chip: #f0dfda;
+  --inv-secondary: #7d927f;
+}
+
+.theme-minimal {
+  --inv-bg: #faf8f4;
+  --inv-bg-soft: #f2ede5;
+  --inv-surface: #ffffff;
+  --inv-text: #221d1f;
+  --inv-muted: rgba(34, 29, 31, 0.68);
+  --inv-accent: #70233f;
+  --inv-accent-strong: #70233f;
+  --inv-line: #e4ddd2;
+  --inv-chip: #f2ede5;
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

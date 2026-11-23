@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Gold paisley line art">
+  <!-- Original Aaiyeji artwork — royal demo gallery. -->
+  <rect width="400" height="500" fill="#241019"/>
+  <rect x="16" y="16" width="368" height="468" fill="none" stroke="#C99B50" stroke-width="1" opacity="0.5"/>
+  <g fill="none" stroke="#C99B50" stroke-linecap="round" stroke-linejoin="round">
+    <!-- large paisley -->
+    <path d="M200 420 C130 400 96 340 104 272 C112 204 160 150 216 128 C262 110 292 84 296 52 C316 84 314 122 288 150 C262 178 224 190 204 224 C184 258 190 300 216 322 C242 344 276 340 292 316 C308 292 300 262 278 252 C256 242 234 254 232 276" stroke-width="2.2"/>
+    <!-- inner echo -->
+    <path d="M200 396 C146 378 120 330 126 276 C132 222 172 176 220 156 C256 141 280 122 288 98" stroke-width="1.1" opacity="0.75"/>
+    <!-- inner florals -->
+    <path d="M182 300 C174 288 176 274 186 264 C196 274 198 288 190 300" stroke-width="1.3"/>
+    <circle cx="186" cy="318" r="4" stroke-width="1.3"/>
+    <path d="M156 250 C150 240 152 230 160 224 C168 230 170 240 164 250" stroke-width="1.2"/>
+    <circle cx="216" cy="200" r="3.4" stroke-width="1.2"/>
+    <circle cx="248" cy="168" r="3" stroke-width="1.2"/>
+    <!-- dots along the curve -->
+    <g fill="#E4C98F" stroke="none">
+      <circle cx="140" cy="330" r="2.4"/><circle cx="152" cy="356" r="2.4"/><circle cx="172" cy="376" r="2.4"/>
+      <circle cx="120" cy="300" r="2.4"/><circle cx="122" cy="268" r="2.4"/><circle cx="132" cy="236" r="2.4"/>
+    </g>
+    <!-- corner sprigs -->
+    <path d="M52 452 C64 444 76 444 88 452" stroke-width="1.2"/>
+    <path d="M312 452 C324 444 336 444 348 452" stroke-width="1.2"/>
+    <path d="M52 60 C64 52 76 52 88 60" stroke-width="1.2"/>
+  </g>
+</svg>

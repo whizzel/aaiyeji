@@ -1,0 +1,25 @@
+/* ============================================================
+   AAIYEJI — Brand colour tokens (source of truth)
+   Edit values here; the app imports this file in app/globals.css.
+   Mirror any change in design-tokens.json.
+   Status: initial concept palette, pending formal brand approval.
+   ============================================================ */
+
+:root {
+  /* Core palette */
+  --aaiyeji-wine: #70233f;   /* Primary brand colour, key buttons, strong accents */
+  --aaiyeji-deep: #351824;   /* Deep text, dark sections, premium contrast */
+  --aaiyeji-gold: #c99b50;   /* Antique-gold details, fine borders, highlights */
+  --aaiyeji-ivory: #fbf7f0;  /* Main warm background */
+  --aaiyeji-blush: #f0dfda;  /* Soft section / card tint */
+  --aaiyeji-sage: #7d927f;   /* Restrained secondary accent */
+  --aaiyeji-ink: #2d2529;    /* Body text */
+  --aaiyeji-white: #ffffff;  /* Clean card surfaces */
+
+  /* Derived tones (tuned for contrast and depth) */
+  --aaiyeji-wine-soft: #8a3a58;   /* Hover / lighter wine */
+  --aaiyeji-gold-soft: #e4c98f;   /* Light gold for dark surfaces */
+  --aaiyeji-ivory-dim: #f4ecdf;   /* Slightly deeper ivory for alternation */
+  --aaiyeji-line: #e7dcc9;        /* Hairline borders on light surfaces */
+  --aaiyeji-night: #241019;       /* Darkest wine-night, royal demo surface */
+}

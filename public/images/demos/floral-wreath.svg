@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Blush and sage flower wreath">
+  <!-- Original Aaiyeji artwork — floral demo gallery. -->
+  <rect width="400" height="500" fill="#FBF7F0"/>
+  <rect x="16" y="16" width="368" height="468" fill="none" stroke="#E7DCC9" stroke-width="1.5"/>
+  <!-- wreath ring of stems -->
+  <g fill="none" stroke="#7D927F" stroke-width="1.6" stroke-linecap="round">
+    <circle cx="200" cy="250" r="118" opacity="0.9"/>
+    <circle cx="200" cy="250" r="126" opacity="0.35"/>
+    <!-- leaves around the ring -->
+    <path d="M200 132 C190 120 190 108 200 98 C210 108 210 120 200 132 Z"/>
+    <path d="M288 162 C296 150 308 146 320 150 C316 162 304 168 288 162 Z"/>
+    <path d="M318 250 C330 244 342 246 350 254 C342 262 330 262 318 250 Z"/>
+    <path d="M288 338 C300 340 308 348 310 360 C298 362 288 354 288 338 Z"/>
+    <path d="M200 368 C210 380 210 392 200 402 C190 392 190 380 200 368 Z"/>
+    <path d="M112 338 C100 340 92 348 90 360 C102 362 112 354 112 338 Z"/>
+    <path d="M82 250 C70 244 58 246 50 254 C58 262 70 262 82 250 Z"/>
+    <path d="M112 162 C104 150 92 146 80 150 C84 162 96 168 112 162 Z"/>
+  </g>
+  <!-- blossoms -->
+  <g>
+    <g fill="#F0DFDA" stroke="#70233F" stroke-width="1.1">
+      <g transform="translate(200 132)">
+        <ellipse cx="0" cy="-11" rx="6" ry="10"/><ellipse cx="10" cy="-3" rx="6" ry="10" transform="rotate(72 10 -3)"/><ellipse cx="6" cy="9" rx="6" ry="10" transform="rotate(144 6 9)"/><ellipse cx="-6" cy="9" rx="6" ry="10" transform="rotate(216 -6 9)"/><ellipse cx="-10" cy="-3" rx="6" ry="10" transform="rotate(288 -10 -3)"/>
+      </g>
+      <g transform="translate(318 250)">
+        <ellipse cx="0" cy="-11" rx="6" ry="10"/><ellipse cx="10" cy="-3" rx="6" ry="10" transform="rotate(72 10 -3)"/><ellipse cx="6" cy="9" rx="6" ry="10" transform="rotate(144 6 9)"/><ellipse cx="-6" cy="9" rx="6" ry="10" transform="rotate(216 -6 9)"/><ellipse cx="-10" cy="-3" rx="6" ry="10" transform="rotate(288 -10 -3)"/>
+      </g>
+      <g transform="translate(200 368)">
+        <ellipse cx="0" cy="-11" rx="6" ry="10"/><ellipse cx="10" cy="-3" rx="6" ry="10" transform="rotate(72 10 -3)"/><ellipse cx="6" cy="9" rx="6" ry="10" transform="rotate(144 6 9)"/><ellipse cx="-6" cy="9" rx="6" ry="10" transform="rotate(216 -6 9)"/><ellipse cx="-10" cy="-3" rx="6" ry="10" transform="rotate(288 -10 -3)"/>
+      </g>
+      <g transform="translate(82 250)">
+        <ellipse cx="0" cy="-11" rx="6" ry="10"/><ellipse cx="10" cy="-3" rx="6" ry="10" transform="rotate(72 10 -3)"/><ellipse cx="6" cy="9" rx="6" ry="10" transform="rotate(144 6 9)"/><ellipse cx="-6" cy="9" rx="6" ry="10" transform="rotate(216 -6 9)"/><ellipse cx="-10" cy="-3" rx="6" ry="10" transform="rotate(288 -10 -3)"/>
+      </g>
+    </g>
+    <g fill="#C99B50">
+      <circle cx="200" cy="132" r="4"/><circle cx="318" cy="250" r="4"/><circle cx="200" cy="368" r="4"/><circle cx="82" cy="250" r="4"/>
+    </g>
+  </g>
+  <!-- centre sprig -->
+  <g fill="none" stroke="#7D927F" stroke-width="1.4" stroke-linecap="round">
+    <path d="M200 292 V218"/>
+    <path d="M200 262 C188 258 182 248 182 238 C194 242 200 252 200 262 Z"/>
+    <path d="M200 244 C212 240 218 230 218 220 C206 224 200 234 200 244 Z"/>
+    <path d="M200 218 C194 208 194 198 200 190 C206 198 206 208 200 218 Z"/>
+  </g>
+</svg>

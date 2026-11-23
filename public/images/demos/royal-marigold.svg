@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Hanging marigold strands">
+  <!-- Original Aaiyeji artwork — royal demo gallery. -->
+  <rect width="400" height="500" fill="#351824"/>
+  <rect x="16" y="16" width="368" height="468" fill="none" stroke="#C99B50" stroke-width="1" opacity="0.5"/>
+  <g stroke-linecap="round">
+    <path d="M60 40 H340" stroke="#C99B50" stroke-width="1.6" fill="none"/>
+    <!-- three strands -->
+    <g fill="none">
+      <path d="M110 40 V310" stroke="#7D927F" stroke-width="1.4"/>
+      <path d="M200 40 V380" stroke="#7D927F" stroke-width="1.4"/>
+      <path d="M290 40 V310" stroke="#7D927F" stroke-width="1.4"/>
+    </g>
+    <!-- marigold heads: layered circles -->
+    <g>
+      <g fill="#C99B50">
+        <circle cx="110" cy="90" r="13"/><circle cx="110" cy="140" r="13"/><circle cx="110" cy="190" r="13"/><circle cx="110" cy="240" r="13"/><circle cx="110" cy="290" r="13"/>
+        <circle cx="290" cy="90" r="13"/><circle cx="290" cy="140" r="13"/><circle cx="290" cy="190" r="13"/><circle cx="290" cy="240" r="13"/><circle cx="290" cy="290" r="13"/>
+      </g>
+      <g fill="#E4C98F">
+        <circle cx="200" cy="100" r="15"/><circle cx="200" cy="160" r="15"/><circle cx="200" cy="220" r="15"/><circle cx="200" cy="280" r="15"/><circle cx="200" cy="340" r="15"/>
+      </g>
+      <g fill="#351824">
+        <circle cx="110" cy="90" r="4"/><circle cx="110" cy="140" r="4"/><circle cx="110" cy="190" r="4"/><circle cx="110" cy="240" r="4"/><circle cx="110" cy="290" r="4"/>
+        <circle cx="290" cy="90" r="4"/><circle cx="290" cy="140" r="4"/><circle cx="290" cy="190" r="4"/><circle cx="290" cy="240" r="4"/><circle cx="290" cy="290" r="4"/>
+        <circle cx="200" cy="100" r="5"/><circle cx="200" cy="160" r="5"/><circle cx="200" cy="220" r="5"/><circle cx="200" cy="280" r="5"/><circle cx="200" cy="340" r="5"/>
+      </g>
+    </g>
+    <!-- leaf pairs -->
+    <g fill="none" stroke="#7D927F" stroke-width="1.2">
+      <path d="M110 115 C98 112 92 104 92 96 C102 98 108 106 110 115 Z"/>
+      <path d="M110 215 C122 212 128 204 128 196 C118 198 112 206 110 215 Z"/>
+      <path d="M290 115 C302 112 308 104 308 96 C298 98 292 106 290 115 Z"/>
+      <path d="M290 215 C278 212 272 204 272 196 C282 198 288 206 290 215 Z"/>
+      <path d="M200 190 C186 186 180 176 180 166 C192 170 198 180 200 190 Z"/>
+      <path d="M200 310 C214 306 220 296 220 286 C208 290 202 300 200 310 Z"/>
+    </g>
+    <!-- end buds -->
+    <g fill="none" stroke="#C99B50" stroke-width="1.4">
+      <path d="M110 310 C104 320 104 330 110 338 C116 330 116 320 110 310 Z"/>
+      <path d="M290 310 C284 320 284 330 290 338 C296 330 296 320 290 310 Z"/>
+      <path d="M200 380 C193 391 193 402 200 411 C207 402 207 391 200 380 Z"/>
+    </g>
+  </g>
+</svg>

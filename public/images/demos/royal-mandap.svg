@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Wedding mandap under an ogee arch">
+  <!-- Original Aaiyeji artwork — royal demo gallery. -->
+  <rect width="400" height="500" fill="#241019"/>
+  <rect x="16" y="16" width="368" height="468" fill="none" stroke="#C99B50" stroke-width="1" opacity="0.5"/>
+  <g fill="none" stroke="#C99B50" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 430 V220 C70 165 105 130 150 105 C180 88 192 72 200 48 C208 72 220 88 250 105 C295 130 330 165 330 220 V430" stroke-width="2"/>
+    <path d="M88 430 V225 C88 178 118 148 158 126 C184 111 194 96 200 76 C206 96 216 111 242 126 C282 148 312 178 312 225 V430" stroke-width="1" opacity="0.7"/>
+    <path d="M200 48 V30" stroke-width="1.6"/>
+    <circle cx="200" cy="26" r="3" stroke-width="1.4"/>
+    <!-- mandap pillars -->
+    <path d="M130 430 V280 M270 430 V280" stroke-width="2"/>
+    <path d="M120 280 H140 M260 280 H280" stroke-width="1.6"/>
+    <path d="M124 292 H136 M264 292 H276" stroke-width="1"/>
+    <!-- canopy -->
+    <path d="M112 280 C140 248 260 248 288 280" stroke-width="1.6"/>
+    <path d="M130 262 C160 240 240 240 270 262" stroke-width="1" opacity="0.7"/>
+    <!-- sacred fire -->
+    <path d="M200 400 C192 388 194 376 200 366 C206 376 208 388 200 400 Z" stroke-width="1.6"/>
+    <path d="M182 408 H218" stroke-width="1.6"/>
+    <path d="M176 416 H224" stroke-width="1"/>
+    <!-- hanging strands -->
+    <path d="M104 190 V236" stroke-width="1"/>
+    <circle cx="104" cy="242" r="3.4" stroke-width="1.2"/>
+    <path d="M296 190 V236" stroke-width="1"/>
+    <circle cx="296" cy="242" r="3.4" stroke-width="1.2"/>
+    <!-- threshold -->
+    <path d="M56 430 H344" stroke-width="2"/>
+    <path d="M66 440 H334" stroke-width="1" opacity="0.7"/>
+  </g>
+  <circle cx="200" cy="320" r="2.4" fill="#E4C98F"/>
+</svg>

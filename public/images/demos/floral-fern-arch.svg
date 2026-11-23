@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Garden arch covered in ferns and blossoms">
+  <!-- Original Aaiyeji artwork — floral demo gallery. -->
+  <rect width="400" height="500" fill="#FBF7F0"/>
+  <rect x="16" y="16" width="368" height="468" fill="none" stroke="#E7DCC9" stroke-width="1.5"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- arch -->
+    <path d="M90 440 V240 C90 160 140 110 200 96 C260 110 310 160 310 240 V440" stroke="#7D927F" stroke-width="2.2"/>
+    <path d="M106 440 V242 C106 172 150 126 200 113 C250 126 294 172 294 242 V440" stroke="#7D927F" stroke-width="1.1" opacity="0.6"/>
+    <!-- fern fronds along the arch -->
+    <g stroke="#7D927F" stroke-width="1.2">
+      <path d="M96 300 C82 296 74 286 74 274"/><path d="M80 288 L70 284 M84 296 L72 296 M90 302 L80 308"/>
+      <path d="M304 300 C318 296 326 286 326 274"/><path d="M320 288 L330 284 M316 296 L328 296 M310 302 L320 308"/>
+      <path d="M120 176 C108 168 104 156 108 144"/><path d="M110 160 L98 158 M114 168 L104 174"/>
+      <path d="M280 176 C292 168 296 156 292 144"/><path d="M290 160 L302 158 M286 168 L296 174"/>
+      <path d="M200 96 C196 82 198 70 206 60"/><path d="M200 80 L190 74 M202 88 L212 84"/>
+    </g>
+    <!-- blossoms -->
+    <g fill="#F0DFDA" stroke="#70233F" stroke-width="1">
+      <circle cx="90" cy="240" r="9"/><circle cx="310" cy="240" r="9"/>
+      <circle cx="128" cy="150" r="8"/><circle cx="272" cy="150" r="8"/>
+      <circle cx="200" cy="96" r="9"/>
+      <circle cx="90" cy="360" r="8"/><circle cx="310" cy="360" r="8"/>
+    </g>
+    <g fill="#C99B50">
+      <circle cx="90" cy="240" r="2.6"/><circle cx="310" cy="240" r="2.6"/><circle cx="128" cy="150" r="2.2"/><circle cx="272" cy="150" r="2.2"/><circle cx="200" cy="96" r="2.6"/><circle cx="90" cy="360" r="2.2"/><circle cx="310" cy="360" r="2.2"/>
+    </g>
+    <!-- ground -->
+    <path d="M60 440 H340" stroke="#7D927F" stroke-width="1.8"/>
+    <path d="M76 452 H324" stroke="#7D927F" stroke-width="1" opacity="0.5"/>
+    <!-- path petals -->
+    <g fill="#F0DFDA" stroke="none">
+      <ellipse cx="170" cy="466" rx="6" ry="3"/><ellipse cx="218" cy="472" rx="6" ry="3"/><ellipse cx="248" cy="462" rx="5" ry="2.6"/><ellipse cx="140" cy="474" rx="5" ry="2.6"/>
+    </g>
+  </g>
+</svg>

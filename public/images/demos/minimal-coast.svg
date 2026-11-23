@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Minimal coastline with a palm and low sun">
+  <!-- Original Aaiyeji artwork — minimal demo gallery. -->
+  <rect width="400" height="500" fill="#FAF8F4"/>
+  <rect x="16" y="16" width="368" height="468" fill="none" stroke="#E4DDD2" stroke-width="1.5"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- low sun -->
+    <path d="M140 300 A60 60 0 0 1 260 300" stroke="#C99B50" stroke-width="2.2"/>
+    <g stroke="#C99B50" stroke-width="1.4" opacity="0.8">
+      <path d="M200 216 V202"/><path d="M152 232 L142 222"/><path d="M248 232 L258 222"/>
+    </g>
+    <!-- horizon -->
+    <path d="M56 300 H344" stroke="#221D1F" stroke-width="1.6" opacity="0.7"/>
+    <!-- water lines -->
+    <g stroke="#221D1F" stroke-width="1" opacity="0.3">
+      <path d="M90 326 H170"/><path d="M210 342 H300"/><path d="M120 362 H220"/><path d="M250 380 H320"/>
+    </g>
+    <!-- palm -->
+    <path d="M310 300 C306 262 300 232 288 206" stroke="#70233F" stroke-width="2"/>
+    <g stroke="#7D927F" stroke-width="1.6">
+      <path d="M288 206 C274 196 260 196 248 204"/>
+      <path d="M288 206 C280 190 268 182 254 182"/>
+      <path d="M288 206 C292 188 302 178 316 174"/>
+      <path d="M288 206 C302 198 316 198 328 206"/>
+      <path d="M288 206 C298 214 302 226 300 238"/>
+    </g>
+    <!-- shore -->
+    <path d="M56 412 C120 400 280 400 344 412" stroke="#221D1F" stroke-width="1.2" opacity="0.4"/>
+  </g>
+</svg>

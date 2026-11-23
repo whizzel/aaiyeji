@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 96" width="400" height="96" role="img" aria-label="AAIYEJI wordmark">
+  <!-- Aaiyeji wordmark — initial concept.
+       The text is live SVG text set in Cormorant Garamond (falls back to Georgia).
+       For final production, convert the wordmark to outlines after brand approval.
+       The app header renders the wordmark as styled HTML for crispness; this file is the editable master. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(8 16) scale(1.0)">
+    <path d="M12 57 V30 C12 17 21 8.5 32 6 C43 8.5 52 17 52 30 V57" stroke="#70233F" stroke-width="2.6"/>
+    <path d="M19 57 V31 C19 21 25.5 14.5 32 12.5 C38.5 14.5 45 21 45 31 V57" stroke="#C99B50" stroke-width="1.6"/>
+    <path d="M8 57 H56" stroke="#70233F" stroke-width="2.6"/>
+    <path d="M32 47 C29.4 43.6 29.4 39.4 32 35.5 C34.6 39.4 34.6 43.6 32 47 Z" stroke="#C99B50" stroke-width="1.6"/>
+    <path d="M32 47 C27.8 46.4 24.9 43.6 24.2 39.6 C28.4 40.2 31.2 43 32 47 Z" stroke="#C99B50" stroke-width="1.4"/>
+    <path d="M32 47 C36.2 46.4 39.1 43.6 39.8 39.6 C35.6 40.2 32.8 43 32 47 Z" stroke="#C99B50" stroke-width="1.4"/>
+    <circle cx="32" cy="22.5" r="1.7" fill="#C99B50" stroke="none"/>
+  </g>
+  <text x="86" y="62" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="46" font-weight="600" letter-spacing="7" fill="#70233F">AAIYEJI</text>
+  <line x1="88" y1="76" x2="384" y2="76" stroke="#C99B50" stroke-width="1"/>
+</svg>
