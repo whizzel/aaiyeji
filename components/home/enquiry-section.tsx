@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Send, MessageCircle, Mail, Copy, Check, AlertCircle } from "lucide-react";
-import { siteConfig, hasWhatsApp, hasEmail, whatsappLink, mailtoLink } from "@/lib/site-config";
+import { siteConfig, hasWhatsApp, hasEmail, whatsappLink } from "@/lib/site-config";
 import { packages, getPackage } from "@/lib/pricing";
 import { occasionOptions } from "@/lib/occasions";
 import {
@@ -21,11 +21,25 @@ const initialValues: EnquiryValues = {
   whatsapp: "",
   occasion: "",
   eventDate: "",
-  pkg: "",
+  pkg: "signature",
   notes: "",
 };
 
-type Status = "idle" | "whatsapp" | "email" | "unconfigured";
+const processSteps = [
+  "We read your brief and understand the celebration.",
+  "We suggest a style and the right package for it.",
+  "We confirm the quote and timeline before booking.",
+];
+
+type Status = "idle" | "whatsapp" | "unconfigured";
+
+/** Keep the date field in dd/mm/yyyy while the visitor types digits. */
+function formatDateInput(value: string): string {
+  const digits = value.replace(/\D/g, "").slice(0, 8);
+  if (digits.length <= 2) return digits;
+  if (digits.length <= 4) return `${digits.slice(0, 2)}/${digits.slice(2)}`;
+  return `${digits.slice(0, 2)}/${digits.slice(2, 4)}/${digits.slice(4)}`;
+}
 
 function Field({
   label,
@@ -92,9 +106,14 @@ export function EnquirySection() {
     setErrors((prev) => ({ ...prev, [key]: undefined }));
   };
 
+  const setDate = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setValues((v) => ({ ...v, eventDate: formatDateInput(e.target.value) }));
+    setErrors((prev) => ({ ...prev, eventDate: undefined }));
+  };
+
   const packageLabel = (() => {
     const pkg = getPackage(values.pkg);
-    return pkg ? `${pkg.name} (${pkg.priceLabel})` : "Help me choose";
+    return pkg ? `${pkg.name} — ${pkg.priceLabel}` : "Help me choose";
   })();
 
   const onSubmit = (e: React.FormEvent) => {
@@ -116,14 +135,6 @@ export function EnquirySection() {
         const win = window.open(url, "_blank", "noopener");
         setWaFallback(win ? null : url);
         setStatus("whatsapp");
-        return;
-      }
-    }
-    if (hasEmail) {
-      const url = mailtoLink(`Invitation enquiry — ${values.name.trim()}`, msg);
-      if (url) {
-        window.location.href = url;
-        setStatus("email");
         return;
       }
     }
@@ -156,21 +167,6 @@ export function EnquirySection() {
             and a quote — before you commit to anything.
           </p>
 
-          <ol className="mt-8 space-y-4">
-            {[
-              "We read your brief and understand the celebration.",
-              "We suggest a style and the right package for it.",
-              "We confirm the quote and timeline before booking.",
-            ].map((step, i) => (
-              <li key={step} className="flex items-start gap-3 text-sm text-ink/75">
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold bg-paper font-display text-sm font-semibold text-wine">
-                  {i + 1}
-                </span>
-                <span className="pt-1">{step}</span>
-              </li>
-            ))}
-          </ol>
-
           <div className="mt-8 flex flex-wrap gap-3">
             {hasWhatsApp && wa ? (
               <ButtonLink href={wa} variant="outline">
@@ -194,6 +190,17 @@ export function EnquirySection() {
           aria-label="Invitation enquiry"
           className="rounded-2xl border border-line bg-paper p-6 shadow-[0_1px_2px_rgba(53,24,36,0.05),0_16px_44px_rgba(53,24,36,0.08)] sm:p-8"
         >
+          <ol className="mb-6 space-y-3 rounded-xl border border-line bg-ivory/60 p-4">
+            {processSteps.map((step, i) => (
+              <li key={step} className="flex items-start gap-3 text-sm text-ink/75">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold bg-paper font-display text-sm font-semibold text-wine">
+                  {i + 1}
+                </span>
+                <span className="pt-1">{step}</span>
+              </li>
+            ))}
+          </ol>
+
           <div className="grid gap-5 sm:grid-cols-2">
             <Field label="Your name" htmlFor="enquiry-name" required error={errors.name}>
               <input
@@ -247,9 +254,12 @@ export function EnquirySection() {
               <input
                 id="enquiry-eventDate"
                 name="eventDate"
-                type="date"
+                type="text"
+                inputMode="numeric"
+                maxLength={10}
+                placeholder="dd/mm/yyyy"
                 value={values.eventDate}
-                onChange={set("eventDate")}
+                onChange={setDate}
                 aria-invalid={Boolean(errors.eventDate)}
                 aria-describedby={errors.eventDate ? "enquiry-eventDate-error" : undefined}
                 className={inputClasses}
@@ -307,16 +317,6 @@ export function EnquirySection() {
                     </a>
                   </p>
                 ) : null}
-              </div>
-            ) : null}
-
-            {status === "email" ? (
-              <div role="status" className="mt-5 rounded-xl border border-sage/50 bg-sage/10 p-4 text-sm text-deep">
-                <p className="flex items-start gap-2 font-semibold">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-sage" aria-hidden="true" />
-                  Your email app should open with the enquiry draft.
-                </p>
-                <p className="mt-1 pl-6 text-ink/70">Press send there to reach us.</p>
               </div>
             ) : null}
 

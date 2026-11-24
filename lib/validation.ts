@@ -15,10 +15,27 @@ export function isValidWhatsAppNumber(value: string): boolean {
   return digits.length >= 10 && digits.length <= 15;
 }
 
-/** Optional ISO date (yyyy-mm-dd from a date input). */
+/** Optional date in dd/mm/yyyy format. */
 export function isValidOptionalDate(value: string): boolean {
-  if (!value) return true;
-  return /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(new Date(value).getTime());
+  const trimmed = value.trim();
+  if (!trimmed) return true;
+  const match = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(trimmed);
+  if (!match) return false;
+
+  const day = Number(match[1]);
+  const month = Number(match[2]);
+  const year = Number(match[3]);
+  const date = new Date(year, month - 1, day);
+
+  return (
+    month >= 1 &&
+    month <= 12 &&
+    day >= 1 &&
+    day <= 31 &&
+    date.getFullYear() === year &&
+    date.getMonth() === month - 1 &&
+    date.getDate() === day
+  );
 }
 
 export interface EnquiryValues {
@@ -46,7 +63,7 @@ export function validateEnquiry(values: EnquiryValues): EnquiryErrors {
     errors.occasion = "Please choose the occasion you’re celebrating.";
   }
   if (!isValidOptionalDate(values.eventDate)) {
-    errors.eventDate = "Please pick a valid date, or leave it empty.";
+    errors.eventDate = "Please use a valid date in dd/mm/yyyy format, or leave it empty.";
   }
   return errors;
 }
