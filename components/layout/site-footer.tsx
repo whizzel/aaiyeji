@@ -15,7 +15,7 @@ export function SiteFooter() {
   return (
     <footer className="on-dark bg-deep text-ivory">
       <Container className="py-14">
-        <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_repeat(4,minmax(0,1fr))]">
           <div>
             <Logo tone="dark" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ivory/70">
@@ -61,6 +61,54 @@ export function SiteFooter() {
             </ul>
           </nav>
 
+          <nav aria-label="Footer — contact">
+            <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold-soft">Contact</h2>
+            <ul className="mt-4 space-y-2.5">
+              {hasWhatsApp && wa ? (
+                <li>
+                  <a
+                    href={wa}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-ivory/75 transition-colors hover:text-ivory"
+                  >
+                    <MessageCircle className="h-4 w-4 shrink-0" aria-hidden="true" />
+                    WhatsApp · {siteConfig.whatsappDisplay}
+                  </a>
+                </li>
+              ) : null}
+              {hasEmail ? (
+                <li>
+                  <a
+                    href={`mailto:${siteConfig.contactEmail}`}
+                    className="inline-flex items-center gap-2 break-all text-sm text-ivory/75 transition-colors hover:text-ivory"
+                  >
+                    <Mail className="h-4 w-4 shrink-0" aria-hidden="true" />
+                    {siteConfig.contactEmail}
+                  </a>
+                </li>
+              ) : null}
+              <li>
+                {siteConfig.instagramUrl ? (
+                  <a
+                    href={siteConfig.instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-ivory/75 transition-colors hover:text-ivory"
+                  >
+                    <Instagram className="h-4 w-4 shrink-0" aria-hidden="true" />
+                    Instagram
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center gap-2 text-sm text-ivory/75">
+                    <Instagram className="h-4 w-4 shrink-0" aria-hidden="true" />
+                    {siteConfig.instagramHandle}
+                  </span>
+                )}
+              </li>
+            </ul>
+          </nav>
+
           <nav aria-label="Footer — occasions">
             <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold-soft">Occasions</h2>
             <ul className="mt-4 space-y-2.5">
@@ -85,17 +133,6 @@ export function SiteFooter() {
                 </li>
               ))}
             </ul>
-            {siteConfig.instagramUrl ? (
-              <a
-                href={siteConfig.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 text-sm text-ivory/75 transition-colors hover:text-ivory"
-              >
-                <Instagram className="h-4 w-4" aria-hidden="true" />
-                Instagram
-              </a>
-            ) : null}
           </nav>
         </div>
 
