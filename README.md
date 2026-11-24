@@ -53,15 +53,16 @@ real values.** The site behaves honestly when they are unset:
 | -------- | ------- | ------ |
 | `NEXT_PUBLIC_SITE_URL` | Canonical URL, metadata, OG, sitemap | `https://your-real-domain.com` (no trailing slash) |
 | `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp CTAs + enquiry form destination | Country code + digits only, e.g. `9198XXXXXXXX` |
-| `NEXT_PUBLIC_CONTACT_EMAIL` | Enquiry fallback when WhatsApp is unset | Real company email |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | Contact link in the footer/enquiry section | Real company email |
 | `NEXT_PUBLIC_INSTAGRAM_URL` | Footer social link (shown only when set) | Full profile URL |
 
 Enquiry form behaviour:
 
-- WhatsApp configured → opens a prefilled `wa.me` chat (visitor presses send).
-- Only email configured → opens a prefilled mailto draft.
-- Neither configured → shows a clear “not configured” message with a
+- WhatsApp configured → the form opens a prefilled `wa.me` chat (visitor presses
+  send) to the number in `NEXT_PUBLIC_WHATSAPP_NUMBER`.
+- WhatsApp not configured → shows a clear “not configured” message with a
   copy-to-clipboard action. It never pretends an enquiry was sent.
+- Email is a separate contact link; it is not used as a form fallback.
 
 ## Where things live
 
